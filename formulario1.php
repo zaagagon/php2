@@ -6,7 +6,7 @@ if ($por_post) {
     $sexo = $_POST['sexo'];
     $nacionalidad = $_POST['nacionalidad'];
     $intereses = (isset($_POST['intereses'])) ? $_POST['intereses'] : null;
-    $acerca_de_vos = $_POST['acerca_de_vos'];
+    $acerca_de_ti = $_POST['acerca_de_ti'];
 }
 ?>
 <!DOCTYPE>
@@ -27,7 +27,7 @@ if ($por_post) {
             <?php echo nl2br($acerca_de_vos) ?>
         </div>
         <?php else: ?>
-            <form id="formulario" method="post" action="index.php">
+            <form id="formulario" method="post" action="formulario1.php">
                 <table>
                     <tr>
                         <td> <label> Nombre y apellido: </label> </td>
